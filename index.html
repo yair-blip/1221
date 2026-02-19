@@ -11,11 +11,12 @@
         .logo { max-width: 180px; margin-bottom: 20px; }
         .form-group { text-align: right; margin-bottom: 15px; }
         label { display: block; margin-bottom: 5px; font-weight: 700; }
-        input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; font-size: 16px; }
+        input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; font-size: 16px; }
         .submit-btn { background: #ff6600; color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 10px; }
+        .submit-btn:disabled { background: #ccc; }
         #success-message { display: none; color: green; font-weight: bold; padding: 20px; }
-        /* מחביא את הבועה רק אם הצ'אט לא פתוח */
-        .woot-widget-bubble, .woot--bubble-holder { display: none !important; }
+        /* הסתרת הבועה של Chatwoot */
+        .woot-widget-bubble, .woot--bubble-holder, #chatwoot-widget-container { display: none !important; }
     </style>
 </head>
 <body>
@@ -47,12 +48,12 @@
     <div id="success-message">
         <h3>הקריאה נשלחה בהצלחה!</h3>
         <p>נציג יחזור אליך בהקדם.</p>
+        <button class="submit-btn" onclick="location.reload()">פתיחה קריאה נוספת</button>
     </div>
 </div>
 
 <script>
-  window.chatwootSettings = { hideMessageBubble: true, locale: 'he' };
-
+  // טעינת ה-SDK רק לצורך יצירת הסשן ברקע
   (function(d,t) {
     var BASE_URL="https://chat.bar-t.co.il";
     var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -75,31 +76,34 @@
 
     if (!name || !phone) { alert("אנא מלא שם וטלפון"); return; }
 
-    btn.innerText = "מעבד...";
+    btn.innerText = "שולח...";
     btn.disabled = true;
 
+    // פקודה ישירה ל-SDK לפתוח שיחה ולשלוח הודעה
     if (window.$chatwoot) {
-        try {
-            // זיהוי משתמש
-            window.$chatwoot.setUser(phone, { name: name, phone_number: phone });
-            
-            // שליחת הודעה
-            window.$chatwoot.sendMessage(`פנייה מהאתר: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
-
-            // הצלחה
-            document.getElementById('form-content').style.display = 'none';
-            document.getElementById('success-message').style.display = 'block';
-        } catch (e) {
-            console.error(e);
-            // אם השליחה השקטה נכשלה - פשוט נפתח את הצ'אט שהמשתמש יכתוב ידנית
-            window.$chatwoot.toggle("open");
-            btn.innerText = "שלח קריאה";
-            btn.disabled = false;
-        }
+        // מגדיר משתמש
+        window.$chatwoot.setUser(phone, { name: name });
+        
+        // נסיון שליחה עם דיליי קטן לוודא שהיוזר נוצר
+        setTimeout(() => {
+            try {
+                window.$chatwoot.setCustomAttributes({ "סניף": branch });
+                window.$chatwoot.sendMessage(`קריאה חדשה:\nשם: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
+                
+                // אם הגענו לכאן זה כנראה נשלח
+                document.getElementById('form-content').style.display = 'none';
+                document.getElementById('success-message').style.display = 'block';
+            } catch (err) {
+                // אם נכשל, ננסה "בכוח" לפתוח את הצ'אט
+                window.$chatwoot.toggle("open");
+                btn.disabled = false;
+                btn.innerText = "שלח קריאה";
+            }
+        }, 500);
     } else {
-        alert("המערכת עדיין בטעינה, נסה שוב בעוד 2 שניות");
-        btn.innerText = "שלח קריאה";
+        alert("המערכת בטעינה, המתן 2 שניות ונסה שוב");
         btn.disabled = false;
+        btn.innerText = "שלח קריאה";
     }
   }
 </script>
