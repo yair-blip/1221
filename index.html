@@ -3,81 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>איחוד הצלה - פתיחת קריאה</title>
+    <title>איחוד הצלה - פתיחת קריאת שירות</title>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Assistant', sans-serif; background: #f0f2f5; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
         .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 95%; max-width: 400px; text-align: center; border-top: 6px solid #ff6600; box-sizing: border-box; }
         .logo { max-width: 180px; margin-bottom: 20px; }
+        h2 { color: #333; margin-bottom: 20px; font-weight: 800; }
         .form-group { text-align: right; margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; font-weight: 700; }
-        input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; font-size: 16px; }
-        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 15px; display: block; width: 100%; }
-        #success-message { display: none; color: #28a745; font-weight: bold; padding: 20px; }
-        #chatwoot-widget-container, .woot-widget-bubble { display: none !important; }
+        label { display: block; margin-bottom: 5px; font-weight: 700; color: #444; }
+        input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; font-size: 16px; font-family: inherit; }
+        textarea { height: 80px; resize: none; }
+        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 15px; transition: 0.3s; }
+        .submit-btn:hover { background: #e65c00; }
+        .submit-btn:disabled { background: #ccc; cursor: not-allowed; }
+        #success-message { display: none; text-align: center; padding: 20px; }
+        .success-icon { color: #28a745; font-size: 50px; margin-bottom: 10px; }
     </style>
 </head>
 <body>
 
 <div class="card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/UHNewLogo.svg/1280px-UHNewLogo.svg.png" class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/UHNewLogo.svg/1280px-UHNewLogo.svg.png" class="logo" alt="איחוד הצלה">
+    
     <div id="form-content">
         <h2>פתיחת קריאת שירות</h2>
-        <div class="form-group"><label>שם מלא:</label><input type="text" id="cust-name"></div>
-        <div class="form-group"><label>טלפון:</label><input type="tel" id="cust-phone"></div>
-        <div class="form-group"><label>סניף:</label><input id="branch-input" placeholder="שם הסניף"></div>
-        <div class="form-group"><label>תיאור הפנייה:</label><textarea id="issue-desc"></textarea></div>
+        <div class="form-group">
+            <label>שם מלא:</label>
+            <input type="text" id="cust-name" placeholder="שם הפונה">
+        </div>
+        <div class="form-group">
+            <label>טלפון:</label>
+            <input type="tel" id="cust-phone" placeholder="05x-xxxxxxx">
+        </div>
+        <div class="form-group">
+            <label>סניף:</label>
+            <input type="text" id="branch-input" placeholder="שם הסניף">
+        </div>
+        <div class="form-group">
+            <label>תיאור הפנייה:</label>
+            <textarea id="issue-desc" placeholder="פרט כאן את הצורך..."></textarea>
+        </div>
         <button class="submit-btn" id="btn-submit" onclick="sendTicket()">שלח קריאה</button>
     </div>
+
     <div id="success-message">
-        <h3 style="color: #1a7f37;">תודה! הקריאה התקבלה</h3>
-        <p style="color: #1a7f37;">נציג יחזור אליך בהקדם.</p>
+        <div class="success-icon">✓</div>
+        <h3 style="color: #28a745;">הקריאה התקבלה בהצלחה!</h3>
+        <p>נציג שירות יחזור אליך בהקדם.</p>
+        <button class="submit-btn" style="background: #666;" onclick="location.reload()">פתיחת קריאה נוספת</button>
     </div>
 </div>
 
 <script>
-  window.chatwootSettings = { hideMessageBubble: true, locale: 'he' };
-
-  (function(d,t) {
-    var BASE_URL="https://chat.bar-t.co.il";
-    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=BASE_URL+"/packs/js/sdk.js"; g.async=true;
-    s.parentNode.insertBefore(g,s);
-    g.onload=function(){
-      window.chatwootSDK.run({ websiteToken: 'h9DWhNDA2QJUmnMgyCVnDtRZ', baseUrl: BASE_URL });
-    }
-  })(document,"script");
-
-  function sendTicket() {
+  async function sendTicket() {
     const name = document.getElementById('cust-name').value;
     const phone = document.getElementById('cust-phone').value;
     const branch = document.getElementById('branch-input').value;
     const desc = document.getElementById('issue-desc').value;
     const btn = document.getElementById('btn-submit');
 
-    if (!name || !phone) { alert("נא למלא שם וטלפון"); return; }
-    btn.innerText = "שולח..."; btn.disabled = true;
+    if (!name || !phone) {
+        alert("נא למלא שם וטלפון");
+        return;
+    }
 
-    if (window.$chatwoot && typeof window.$chatwoot.setUser === 'function') {
-        // 1. קביעת המשתמש
-        window.$chatwoot.setUser(phone, { name: name, phone_number: phone });
-        
-        // 2. עדכון תכונות (זה יופיע לך ב-Chatwoot)
-        window.$chatwoot.setCustomAttributes({ "סניף": branch, "פנייה_מהאתר": desc });
+    btn.innerText = "שולח...";
+    btn.disabled = true;
 
-        // 3. תיקון השגיאה: שליחת אירוע בפורמט JSON תקין
-        window.postMessage(JSON.stringify({ event: 'chatwoot-widget:set-user' }), '*');
+    // הגדרות ה-API שלך
+    const ACCOUNT_ID = "2"; 
+    const INBOX_ID = "10"; 
+    const ACCESS_TOKEN = "CuQaTss4JDPsmtqRjMXW7oeM"; 
+    const BASE_URL = `https://chat.bar-t.co.il/api/v1/accounts/${ACCOUNT_ID}`;
 
-        // 4. הצגת הצלחה
-        setTimeout(() => {
-            document.getElementById('form-content').style.display = 'none';
-            document.getElementById('success-message').style.display = 'block';
-        }, 1000);
-    } else {
-        // גיבוי אם ה-SDK לא נטען בזמן
-        setTimeout(sendTicket, 500);
+    try {
+        // 1. יצירת איש קשר
+        const contactRes = await fetch(`${BASE_URL}/contacts`, {
+            method: 'POST',
+            headers: { 
+                'Content-Type': 'application/json',
+                'api_access_token': ACCESS_TOKEN 
+            },
+            body: JSON.stringify({ 
+                name: name, 
+                phone_number: phone,
+                custom_attributes: { "סניף": branch }
+            })
+        });
+        const contactData = await contactRes.json();
+        const contactId = contactData.payload.contact.id;
+
+        // 2. יצירת שיחה
+        const convRes = await fetch(`${BASE_URL}/conversations`, {
+            method: 'POST',
+            headers: { 
+                'Content-Type': 'application/json',
+                'api_access_token': ACCESS_TOKEN 
+            },
+            body: JSON.stringify({ 
+                source_id: contactId, 
+                inbox_id: INBOX_ID, 
+                contact_id: contactId 
+            })
+        });
+        const convData = await convRes.json();
+        const convId = convData.id;
+
+        // 3. שליחת ההודעה עם פרטי הטופס
+        await fetch(`${BASE_URL}/conversations/${convId}/messages`, {
+            method: 'POST',
+            headers: { 
+                'Content-Type': 'application/json',
+                'api_access_token': ACCESS_TOKEN 
+            },
+            body: JSON.stringify({ 
+                content: `קריאה חדשה מהאתר:\nשם: ${name}\nטלפון: ${phone}\nסניף: ${branch}\nתיאור: ${desc}`, 
+                message_type: "incoming" 
+            })
+        });
+
+        // הצגת מסך הצלחה
+        document.getElementById('form-content').style.display = 'none';
+        document.getElementById('success-message').style.display = 'block';
+
+    } catch (e) {
+        console.error("Error:", e);
+        alert("חלה שגיאה בשליחה. נסה שוב בעוד רגע.");
+        btn.disabled = false;
+        btn.innerText = "שלח קריאה";
     }
   }
 </script>
+
 </body>
 </html>
