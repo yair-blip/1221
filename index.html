@@ -13,9 +13,9 @@
         label { display: block; margin-bottom: 5px; font-weight: 700; }
         input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; font-size: 16px; }
         .submit-btn { background: #ff6600; color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 10px; }
-        .submit-btn:disabled { background: #ccc; cursor: not-allowed; }
-        #success-message { display: none; color: #28a745; font-weight: bold; padding: 20px; }
-        #chatwoot-widget-container, .woot-widget-bubble, .woot--bubble-holder { display: none !important; }
+        #success-message { display: none; color: green; font-weight: bold; padding: 20px; }
+        /* החבאה מוחלטת */
+        #chatwoot-widget-container, .woot-widget-bubble, .woot--bubble-holder { display: none !important; visibility: hidden !important; }
     </style>
 </head>
 <body>
@@ -30,7 +30,7 @@
         <div class="form-group"><label>תיאור הפנייה:</label><textarea id="issue-desc"></textarea></div>
         <button class="submit-btn" id="btn-submit" onclick="sendTicket()">שלח קריאה</button>
     </div>
-    <div id="success-message"><h3>הקריאה נשלחה בהצלחה!</h3><p>נציג יחזור אליך בהקדם.</p></div>
+    <div id="success-message"><h3>תודה! הקריאה התקבלה</h3><p>נציג יחזור אליך בהקדם.</p></div>
 </div>
 
 <script>
@@ -46,44 +46,38 @@
     }
   })(document,"script");
 
-  async function sendTicket() {
+  function sendTicket() {
     const name = document.getElementById('cust-name').value;
     const phone = document.getElementById('cust-phone').value;
     const branch = document.getElementById('branch-input').value;
     const desc = document.getElementById('issue-desc').value;
     const btn = document.getElementById('btn-submit');
 
-    if (!name || !phone) { alert("נא למלא שם וטלפון"); return; }
-    
-    btn.innerText = "שולח...";
-    btn.disabled = true;
+    if (!name || !phone) { alert("מלא שם וטלפון"); return; }
+    btn.innerText = "מעבד..."; btn.disabled = true;
 
     if (window.$chatwoot) {
-        // שלב 1: הגדרת המשתמש
-        window.$chatwoot.setUser(phone, {
-            name: name,
-            identifier: phone
-        });
-
-        // שלב 2: השהייה קלה וניסיון שליחה
+        // שלב 1: זיהוי
+        window.$chatwoot.setUser(phone, { name: name, phone_number: phone });
+        
+        // שלב 2: שליחה דרך אירוע פנימי של ה-SDK
         setTimeout(() => {
-            try {
-                // אנחנו מגדירים תגית לשיחה כדי שתוכל לסנן ב-Dashboard
-                window.$chatwoot.setLabel('פנייה_מהאתר');
-                window.$chatwoot.setCustomAttributes({ "סניף": branch, "טלפון": phone });
-                
-                // שליחת ההודעה
-                window.$chatwoot.sendMessage(`קריאה חדשה:\nסניף: ${branch}\nתיאור: ${desc}`);
+            window.$chatwoot.setCustomAttributes({ "סניף": branch });
+            
+            // פקודת קסם: אנחנו שולחים את ההודעה ישירות לתוך ה-Iframe
+            window.postMessage(
+              JSON.stringify({
+                event: 'setLabel',
+                labels: ['קריאה_מהאתר']
+              }),
+              '*'
+            );
 
-                // סיום והצגת הצלחה
-                document.getElementById('form-content').style.display = 'none';
-                document.getElementById('success-message').style.display = 'block';
-            } catch (err) {
-                console.error("Error sending:", err);
-                alert("חלה שגיאה בשליחה. אנא נסה שוב.");
-                btn.disabled = false;
-                btn.innerText = "שלח קריאה";
-            }
+            window.$chatwoot.sendMessage(`--- קריאה חדשה ---\nשם: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
+
+            // מציגים הצלחה
+            document.getElementById('form-content').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
         }, 1500);
     }
   }
