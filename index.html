@@ -14,8 +14,7 @@
         input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; font-size: 16px; }
         .submit-btn { background: #ff6600; color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 10px; }
         .submit-btn:disabled { background: #ccc; cursor: not-allowed; }
-        #success-message { display: none; color: green; font-weight: bold; padding: 20px; }
-        /* הסתרה ראשונית של הצ'אט */
+        #success-message { display: none; color: #28a745; font-weight: bold; padding: 20px; }
         #chatwoot-widget-container, .woot-widget-bubble, .woot--bubble-holder { display: none !important; }
     </style>
 </head>
@@ -36,6 +35,7 @@
 
 <script>
   window.chatwootSettings = { hideMessageBubble: true, locale: 'he' };
+  
   (function(d,t) {
     var BASE_URL="https://chat.bar-t.co.il";
     var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -53,36 +53,38 @@
     const desc = document.getElementById('issue-desc').value;
     const btn = document.getElementById('btn-submit');
 
-    if (!name || !phone) { alert("אנא מלא שם וטלפון"); return; }
+    if (!name || !phone) { alert("נא למלא שם וטלפון"); return; }
     
-    btn.innerText = "שולח נתונים...";
+    btn.innerText = "שולח...";
     btn.disabled = true;
 
     if (window.$chatwoot) {
-        // שלב 1: זיהוי משתמש
-        window.$chatwoot.setUser(phone, { name: name, phone_number: phone });
-        
-        // שלב 2: הגדרת מאפיינים
-        window.$chatwoot.setCustomAttributes({ "סניף": branch });
+        // שלב 1: הגדרת המשתמש
+        window.$chatwoot.setUser(phone, {
+            name: name,
+            identifier: phone
+        });
 
-        // שלב 3: שליחת הודעה עם "תכנית גיבוי"
-        try {
-            // אנחנו שולחים את ההודעה ומחכים 2 שניות
-            window.$chatwoot.sendMessage(`פנייה חדשה:\nשם: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
-            
-            // הצגת הודעת הצלחה מיד באתר כדי שהמשתמש יהיה מרוצה
-            setTimeout(() => {
+        // שלב 2: השהייה קלה וניסיון שליחה
+        setTimeout(() => {
+            try {
+                // אנחנו מגדירים תגית לשיחה כדי שתוכל לסנן ב-Dashboard
+                window.$chatwoot.setLabel('פנייה_מהאתר');
+                window.$chatwoot.setCustomAttributes({ "סניף": branch, "טלפון": phone });
+                
+                // שליחת ההודעה
+                window.$chatwoot.sendMessage(`קריאה חדשה:\nסניף: ${branch}\nתיאור: ${desc}`);
+
+                // סיום והצגת הצלחה
                 document.getElementById('form-content').style.display = 'none';
                 document.getElementById('success-message').style.display = 'block';
-            }, 1000);
-
-        } catch (e) {
-            // אם יש שגיאה חמורה, נציג את הצ'אט כגיבוי
-            alert("חלה שגיאה טכנית. הצ'אט ייפתח כעת כדי שתוכל לשלוח ידנית.");
-            window.$chatwoot.toggle("open");
-            btn.disabled = false;
-            btn.innerText = "נסה שוב";
-        }
+            } catch (err) {
+                console.error("Error sending:", err);
+                alert("חלה שגיאה בשליחה. אנא נסה שוב.");
+                btn.disabled = false;
+                btn.innerText = "שלח קריאה";
+            }
+        }, 1500);
     }
   }
 </script>
