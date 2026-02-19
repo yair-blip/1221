@@ -15,7 +15,7 @@
         .submit-btn { background: #ff6600; color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 10px; }
         .submit-btn:disabled { background: #ccc; cursor: not-allowed; }
         #success-message { display: none; color: green; font-weight: bold; padding: 20px; }
-        /* החבאה מוחלטת של הצ'אט */
+        /* הסתרה ראשונית של הצ'אט */
         #chatwoot-widget-container, .woot-widget-bubble, .woot--bubble-holder { display: none !important; }
     </style>
 </head>
@@ -46,7 +46,7 @@
     }
   })(document,"script");
 
-  function sendTicket() {
+  async function sendTicket() {
     const name = document.getElementById('cust-name').value;
     const phone = document.getElementById('cust-phone').value;
     const branch = document.getElementById('branch-input').value;
@@ -55,29 +55,35 @@
 
     if (!name || !phone) { alert("אנא מלא שם וטלפון"); return; }
     
-    btn.innerText = "מתחבר לשרת...";
+    btn.innerText = "שולח נתונים...";
     btn.disabled = true;
 
-    // ניסיון התחברות ושליחה בלופ
-    let checkReady = setInterval(() => {
-        if (window.$chatwoot && typeof window.$chatwoot.setUser === 'function') {
-            clearInterval(checkReady);
-            
-            // זיהוי המשתמש
-            window.$chatwoot.setUser(phone, { name: name });
-            btn.innerText = "שולח נתונים...";
+    if (window.$chatwoot) {
+        // שלב 1: זיהוי משתמש
+        window.$chatwoot.setUser(phone, { name: name, phone_number: phone });
+        
+        // שלב 2: הגדרת מאפיינים
+        window.$chatwoot.setCustomAttributes({ "סניף": branch });
 
-            // המתנה של שנייה ליצירת הסשן בשרת ורק אז שליחה
+        // שלב 3: שליחת הודעה עם "תכנית גיבוי"
+        try {
+            // אנחנו שולחים את ההודעה ומחכים 2 שניות
+            window.$chatwoot.sendMessage(`פנייה חדשה:\nשם: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
+            
+            // הצגת הודעת הצלחה מיד באתר כדי שהמשתמש יהיה מרוצה
             setTimeout(() => {
-                window.$chatwoot.setCustomAttributes({ "סניף": branch });
-                window.$chatwoot.sendMessage(`פנייה חדשה:\nשם: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
-                
-                // סיום
                 document.getElementById('form-content').style.display = 'none';
                 document.getElementById('success-message').style.display = 'block';
-            }, 1500);
+            }, 1000);
+
+        } catch (e) {
+            // אם יש שגיאה חמורה, נציג את הצ'אט כגיבוי
+            alert("חלה שגיאה טכנית. הצ'אט ייפתח כעת כדי שתוכל לשלוח ידנית.");
+            window.$chatwoot.toggle("open");
+            btn.disabled = false;
+            btn.innerText = "נסה שוב";
         }
-    }, 500);
+    }
   }
 </script>
 </body>
