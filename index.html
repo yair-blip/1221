@@ -9,13 +9,17 @@
         body { font-family: 'Assistant', sans-serif; background: #f0f2f5; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
         .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 90%; max-width: 400px; text-align: center; border-top: 6px solid #ff6600; }
         .logo { max-width: 180px; margin-bottom: 20px; }
+        h2 { margin-bottom: 20px; font-weight: 800; }
         .form-group { text-align: right; margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; font-weight: 700; }
+        label { display: block; margin-bottom: 5px; font-weight: 700; color: #444; }
         input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; font-size: 16px; }
-        .submit-btn { background: #ff6600; color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 20px; display: block; }
-        #success-message { display: none; color: #28a745; font-weight: bold; padding: 20px; }
-        /* הסתרת בועת הצ'אט */
-        .woot-widget-bubble, .woot--bubble-holder, #chatwoot-widget-container { display: none !important; }
+        textarea { height: 80px; resize: none; }
+        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
+        .submit-btn:hover { background: #e65c00; }
+        #success-message { display: none; padding: 20px; }
+        .success-icon { color: #28a745; font-size: 40px; margin-bottom: 10px; }
+        /* הסתרת הצ'אט לחלוטין */
+        #chatwoot-widget-container, .woot-widget-bubble, .woot--bubble-holder { display: none !important; visibility: hidden !important; }
     </style>
 </head>
 <body>
@@ -25,25 +29,35 @@
     
     <div id="form-content">
         <h2>פתיחת קריאת שירות</h2>
-        
         <div class="form-group">
             <label>שם מלא:</label>
-            <input type="text" id="cust-name">
+            <input type="text" id="cust-name" placeholder="שם הפונה">
         </div>
-
         <div class="form-group">
             <label>טלפון:</label>
-            <input type="tel" id="cust-phone">
+            <input type="tel" id="cust-phone" placeholder="05x-xxxxxxx">
         </div>
-
         <div class="form-group">
             <label>סניף:</label>
-            <input id="branch-input" placeholder="הקלד שם סניף">
+            <input id="branch-input" placeholder="שם הסניף או העיר">
         </div>
-
         <div class="form-group">
-            <label>תיאור הפנייה:</label>
-            <textarea id="issue-desc"></textarea>
+            <label>מהות הפנייה:</label>
+            <textarea id="issue-desc" placeholder="פרט בקצרה את הצורך..."></textarea>
         </div>
+        <button class="submit-btn" id="btn-submit" onclick="sendTicket()">שלח קריאה עכשיו</button>
+    </div>
 
-        <button type="button" class="submit-btn" id="btn-submit
+    <div id="success-message">
+        <div class="success-icon">✓</div>
+        <h3>הקריאה נשלחה בהצלחה!</h3>
+        <p>נציג שירות יחזור אליך בהקדם האפשרי.</p>
+        <button class="submit-btn" style="background: #666;" onclick="location.reload()">פתיחת קריאה נוספת</button>
+    </div>
+</div>
+
+<script>
+  window.chatwootSettings = { hideMessageBubble: true, locale: 'he' };
+
+  (function(d,t) {
+    var BASE_URL="
