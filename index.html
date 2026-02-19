@@ -1,65 +1,18 @@
-<!DOCTYPE html>
-<html lang="he" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>פתיחת קריאת שירות - איחוד הצלה</title>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Assistant', sans-serif; background: #f0f2f5; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .card { background: white; padding: 35px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 90%; max-width: 420px; text-align: center; border-top: 6px solid #ff6600; transition: 0.3s; }
-        .logo { max-width: 200px; height: auto; margin-bottom: 20px; }
-        h2 { color: #333; margin-bottom: 20px; font-weight: 800; }
-        .form-group { text-align: right; margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; font-weight: 700; color: #444; }
-        input, textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Assistant'; box-sizing: border-box; font-size: 16px; }
-        textarea { resize: none; height: 80px; }
-        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; transition: 0.3s; margin-top: 15px; }
-        .submit-btn:hover { background: #e65c00; }
-        .submit-btn:disabled { background: #ccc; cursor: not-allowed; }
-        #success-message { display: none; color: #28a745; font-weight: bold; margin-top: 20px; }
-        .emergency { color: #d00; font-size: 14px; margin-top: 25px; font-weight: bold; border: 1px solid #ffcccc; padding: 8px; border-radius: 6px; background: #fff5f5; }
-    </style>
-</head>
-<body>
-
-<div class="card" id="form-card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/UHNewLogo.svg/1280px-UHNewLogo.svg.png" alt="איחוד הצלה" class="logo">
-    <h2>פתיחת קריאת שירות</h2>
-
-    <div id="form-content">
-        <div class="form-group">
-            <label>שם מלא:</label>
-            <input type="text" id="cust-name" placeholder="הכנס שם מלא">
-        </div>
-        <div class="form-group">
-            <label>מספר טלפון:</label>
-            <input type="tel" id="cust-phone" placeholder="05x-xxxxxxx">
-        </div>
-        <div class="form-group">
-            <label>סניף:</label>
-            <input list="branches" id="branch-input" placeholder="חפש סניף...">
-            <datalist id="branches">
-                <option value="באר שבע, זרובבל 8"> <option value="חיפה, החלוץ 65"> <option value="תל אביב, בועז 24">
-            </datalist>
-        </div>
-        <div class="form-group">
-            <label>תיאור הקריאה:</label>
-            <textarea id="issue-desc" placeholder="מה המהות של הפנייה?"></textarea>
-        </div>
-        <button class="submit-btn" id="btn-text" onclick="sendTicket()">שלח קריאה</button>
-    </div>
-
-    <div id="success-message">
-        <h3>תודה! הקריאה התקבלה.</h3>
-        <p>נציג שירות יחזור אליך בהקדם.</p>
-    </div>
-
-    <div class="emergency">במקרה חירום רפואי חייגו 1221</div>
-</div>
+<style>
+    /* ... כל ה-CSS הקודם שלך ... */
+    
+    /* פקודה שמחביאה את הבועה של הצאט בצד ימין למטה */
+    .woot-widget-bubble, .woot--bubble-holder { display: none !important; }
+</style>
 
 <script>
-  // חיבור ל-SDK של Chatwoot
+  window.chatwootSettings = { 
+    hideMessageBubble: true, // מחביא את הבועה
+    position: 'right',
+    locale: 'he',
+    type: 'standard'
+  };
+
   (function(d,t) {
     var BASE_URL="https://chat.bar-t.co.il";
     var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -94,16 +47,16 @@
     // 2. הגדרת מאפיינים
     window.$chatwoot.setCustomAttributes({ "סניף": branch, "טלפון": phone });
 
-    // 3. שליחת ההודעה אוטומטית כקריאה
+    // 3. שליחת ההודעה וסגירה מיידית של החלונית אם היא נפתחה
     setTimeout(() => {
         window.$chatwoot.sendMessage(`קריאה חדשה מהטופס:\nשם: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
         
-        // הצגת הודעת הצלחה
+        // מוודא שהחלונית נשארת סגורה
+        window.$chatwoot.toggle("close"); 
+
+        // הצגת הודעת הצלחה בתוך הדף
         document.getElementById('form-content').style.display = 'none';
         document.getElementById('success-message').style.display = 'block';
     }, 1000);
   }
 </script>
-
-</body>
-</html>
