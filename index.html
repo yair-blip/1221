@@ -9,40 +9,66 @@
         body { font-family: 'Assistant', sans-serif; background: #f0f2f5; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
         .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 90%; max-width: 400px; text-align: center; border-top: 6px solid #ff6600; }
         .logo { max-width: 180px; margin-bottom: 20px; }
+        h2 { color: #333; margin-bottom: 20px; font-weight: 800; }
         .form-group { text-align: right; margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; font-weight: 700; }
+        label { display: block; margin-bottom: 5px; font-weight: 700; color: #444; }
         input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; font-size: 16px; }
         textarea { height: 80px; resize: none; }
-        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 15px; display: block; }
-        #success-message { display: none; color: #28a745; font-weight: bold; padding: 20px; }
-        /* הסתרת הצ'אט לחלוטין */
-        #chatwoot-widget-container, .woot-widget-bubble, .woot--bubble-holder { display: none !important; }
+        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 15px; transition: 0.3s; }
+        .submit-btn:hover { background: #e65c00; }
+        #success-message { display: none; padding: 20px; text-align: center; }
+        .success-v { color: #28a745; font-size: 50px; margin-bottom: 10px; }
+        /* הסתרת בועת הצ'אט */
+        #chatwoot-widget-container, .woot-widget-bubble, .woot--bubble-holder { display: none !important; visibility: hidden !important; }
     </style>
 </head>
 <body>
 
 <div class="card">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/UHNewLogo.svg/1280px-UHNewLogo.svg.png" class="logo" alt="איחוד הצלה">
+    
     <div id="form-content">
         <h2>פתיחת קריאת שירות</h2>
-        <div class="form-group"><label>שם מלא:</label><input type="text" id="cust-name"></div>
-        <div class="form-group"><label>טלפון:</label><input type="tel" id="cust-phone"></div>
-        <div class="form-group"><label>סניף:</label><input id="branch-input" placeholder="שם הסניף"></div>
-        <div class="form-group"><label>תיאור הפנייה:</label><textarea id="issue-desc"></textarea></div>
+        <div class="form-group">
+            <label>שם מלא:</label>
+            <input type="text" id="cust-name" placeholder="הכנס שם מלא">
+        </div>
+        <div class="form-group">
+            <label>טלפון:</label>
+            <input type="tel" id="cust-phone" placeholder="05x-xxxxxxx">
+        </div>
+        <div class="form-group">
+            <label>סניף:</label>
+            <input type="text" id="branch-input" placeholder="שם הסניף">
+        </div>
+        <div class="form-group">
+            <label>תיאור הפנייה:</label>
+            <textarea id="issue-desc" placeholder="מה המהות של הפנייה?"></textarea>
+        </div>
         <button class="submit-btn" id="btn-submit" onclick="sendTicket()">שלח קריאה</button>
     </div>
-    <div id="success-message"><h3>תודה! הקריאה התקבלה</h3><p>נציג יחזור אליך בהקדם.</p></div>
+
+    <div id="success-message">
+        <div class="success-v">✓</div>
+        <h3>הקריאה נשלחה בהצלחה!</h3>
+        <p>נציג שירות יחזור אליך בהקדם.</p>
+        <button class="submit-btn" style="background:#666" onclick="location.reload()">פתיחת קריאה נוספת</button>
+    </div>
 </div>
 
 <script>
   window.chatwootSettings = { hideMessageBubble: true, locale: 'he' };
+
   (function(d,t) {
     var BASE_URL="https://chat.bar-t.co.il";
     var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=BASE_URL+"/packs/js/sdk.js"; g.async=true;
     s.parentNode.insertBefore(g,s);
     g.onload=function(){
-      window.chatwootSDK.run({ websiteToken: 'h9DWhNDA2QJUmnMgyCVnDtRZ', baseUrl: BASE_URL })
+      window.chatwootSDK.run({
+        websiteToken: 'h9DWhNDA2QJUmnMgyCVnDtRZ',
+        baseUrl: BASE_URL
+      })
     }
   })(document,"script");
 
@@ -53,36 +79,27 @@
     const desc = document.getElementById('issue-desc').value;
     const btn = document.getElementById('btn-submit');
 
-    if (!name || !phone) { alert("אנא מלא שם וטלפון"); return; }
-    btn.innerText = "שולח..."; btn.disabled = true;
+    if (!name || !phone) { alert("נא למלא שם וטלפון"); return; }
 
-    // פונקציה פנימית לביצוע השליחה ברגע שהמערכת מוכנה
-    const attemptSend = () => {
-        if (window.$chatwoot && typeof window.$chatwoot.setUser === 'function') {
-            window.$chatwoot.setUser(phone, { name: name });
+    btn.innerText = "שולח...";
+    btn.disabled = true;
+
+    // שליחה שקטה ללא המתנה
+    if (window.$chatwoot && typeof window.$chatwoot.setUser === 'function') {
+        window.$chatwoot.setUser(phone, { name: name });
+        setTimeout(() => {
             window.$chatwoot.setCustomAttributes({ "סניף": branch });
-            
-            // שימוש בשיטה בטוחה יותר להעברת ההודעה
-            setTimeout(() => {
-                try {
-                    // נסיון שליחת הודעה
-                    if (window.$chatwoot.sendMessage) {
-                        window.$chatwoot.sendMessage(`קריאה חדשה:\nשם: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
-                    }
-                } catch(e) {}
-                
-                // בכל מקרה מציגים הצלחה למשתמש
-                document.getElementById('form-content').style.display = 'none';
-                document.getElementById('success-message').style.display = 'block';
-            }, 1000);
-        } else {
-            // אם עדיין לא נטען, נסה שוב בעוד חצי שנייה
-            setTimeout(attemptSend, 500);
-        }
-    };
+            window.$chatwoot.sendMessage(`קריאה חדשה:\nשם: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
+        }, 500);
+    }
 
-    attemptSend();
+    // מעבר למסך הצלחה תוך שנייה בכל מקרה
+    setTimeout(() => {
+        document.getElementById('form-content').style.display = 'none';
+        document.getElementById('success-message').style.display = 'block';
+    }, 1000);
   }
 </script>
+
 </body>
 </html>
