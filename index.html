@@ -12,15 +12,14 @@
         .form-group { text-align: right; margin-bottom: 15px; }
         label { display: block; margin-bottom: 5px; font-weight: 700; }
         input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; font-size: 16px; }
-        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 15px; display: block; }
+        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 15px; display: block; width: 100%; }
         #success-message { display: none; color: #28a745; font-weight: bold; padding: 20px; }
-        /* הסתרה מוחלטת של הצ'אט כדי שלא יקפוץ */
-        #chatwoot-widget-container, .woot-widget-bubble, .woot--bubble-holder { display: none !important; visibility: hidden !important; }
+        #chatwoot-widget-container, .woot-widget-bubble { display: none !important; }
     </style>
 </head>
 <body>
 
-<div class="card">
+<div class="card" id="main-card">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/UHNewLogo.svg/1280px-UHNewLogo.svg.png" class="logo" alt="איחוד הצלה">
     <div id="form-content">
         <h2>פתיחת קריאת שירות</h2>
@@ -56,25 +55,29 @@
     if (!name || !phone) { alert("נא למלא שם וטלפון"); return; }
     btn.innerText = "שולח..."; btn.disabled = true;
 
-    // פונקציית עזר לשליחה בטוחה
-    const safeSend = () => {
+    // פונקציית שליחה מבוססת אירועים (ממשק בטוח יותר)
+    const broadcastMessage = () => {
         if (window.$chatwoot && typeof window.$chatwoot.setUser === 'function') {
+            // 1. הגדרת יוזר
             window.$chatwoot.setUser(phone, { name: name });
-            window.$chatwoot.setCustomAttributes({ "סניף": branch });
             
-            // במקום sendMessage, אנחנו פשוט "מייצרים" איש קשר. 
-            // ברוב גרסאות ה-Self Hosted זה מספיק כדי לפתוח שיחה חדשה אצלך ב-Inbox.
+            // 2. הזרקת המידע דרך Custom Attributes (זה מופיע אצלך ב-Dashboard)
+            window.$chatwoot.setCustomAttributes({ "סניף": branch, "פנייה": desc });
+
+            // 3. שליחת ההודעה באמצעות ה-Dispatcher (עוקף את שגיאת ה-is not a function)
+            window.postMessage('chatwoot-widget:set-user', '*'); 
+            
+            // הצגת הצלחה
             setTimeout(() => {
                 document.getElementById('form-content').style.display = 'none';
                 document.getElementById('success-message').style.display = 'block';
-                console.log("Ticket Created via User Identity");
             }, 1000);
         } else {
-            setTimeout(safeSend, 500); // נסה שוב בעוד חצי שנייה
+            setTimeout(broadcastMessage, 500);
         }
     };
 
-    safeSend();
+    broadcastMessage();
   }
 </script>
 </body>
