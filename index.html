@@ -3,39 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>דיבאג - איחוד הצלה</title>
+    <title>איחוד הצלה - פתיחת קריאה</title>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Assistant', sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 90%; max-width: 400px; text-align: center; border-top: 6px solid #ff6600; }
-        input, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
-        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; }
+        body { font-family: 'Assistant', sans-serif; background: #f0f2f5; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 95%; max-width: 400px; text-align: center; border-top: 6px solid #ff6600; box-sizing: border-box; }
+        .logo { max-width: 180px; margin-bottom: 20px; }
+        .form-group { text-align: right; margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: 700; }
+        input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; font-size: 16px; font-family: inherit; }
+        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 15px; }
+        #success-message { display: none; color: #28a745; font-weight: bold; padding: 20px; }
+        /* הסתרת הבועה הכחולה */
+        .woot-widget-bubble, .woot--bubble-holder, #chatwoot-widget-container { display: none !important; }
     </style>
 </head>
 <body>
 
 <div class="card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/UHNewLogo.svg/1280px-UHNewLogo.svg.png" style="max-width: 150px; margin-bottom: 20px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/UHNewLogo.svg/1280px-UHNewLogo.svg.png" class="logo">
     <div id="form-content">
-        <h2>בדיקת חיבור למערכת</h2>
-        <input type="text" id="cust-name" placeholder="שם מלא">
-        <input type="tel" id="cust-phone" placeholder="טלפון">
-        <textarea id="issue-desc" placeholder="תיאור קצר"></textarea>
-        <button class="submit-btn" id="btn-submit" onclick="debugAndSend()">שלח בדיקה</button>
+        <h2>פתיחת קריאת שירות</h2>
+        <div class="form-group"><label>שם מלא:</label><input type="text" id="cust-name"></div>
+        <div class="form-group"><label>טלפון:</label><input type="tel" id="cust-phone"></div>
+        <div class="form-group"><label>סניף:</label><input id="branch-input" placeholder="שם הסניף"></div>
+        <div class="form-group"><label>תיאור הפנייה:</label><textarea id="issue-desc"></textarea></div>
+        <button class="submit-btn" id="btn-submit" onclick="sendTicket()">שלח קריאה</button>
     </div>
-    <div id="status-log" style="text-align: right; font-size: 12px; color: #666; margin-top: 15px; background: #eee; padding: 10px; border-radius: 5px;">
-        סטטוס מערכת: ממתין לטעינה...
-    </div>
+    <div id="success-message"><h3>הקריאה התקבלה!</h3><p>נציג יחזור אליך בהקדם.</p></div>
 </div>
 
 <script>
-  // פונקציה לעדכון הסטטוס על המסך
-  function logStatus(msg) {
-    document.getElementById('status-log').innerText += "\n> " + msg;
-    console.log(msg);
-  }
-
-  window.chatwootSettings = { hideMessageBubble: false, locale: 'he' };
+  window.chatwootSettings = { hideMessageBubble: true, locale: 'he' };
 
   (function(d,t) {
     var BASE_URL="https://chat.bar-t.co.il";
@@ -44,45 +43,42 @@
     s.parentNode.insertBefore(g,s);
     g.onload=function(){
       window.chatwootSDK.run({
-        websiteToken: 'h9DWhNDA2QJUmnMgyCVnDtRZ',
+        websiteToken: 'LgubEAWU1P3FerjtJ6zMKghq', // המפתח החדש שלך
         baseUrl: BASE_URL
       });
-      logStatus("הסקריפט של Chatwoot נטען בהצלחה");
     }
   })(document,"script");
 
-  // האזנה לאירוע שהצ'אט מוכן
-  window.addEventListener('chatwoot:ready', function() {
-    logStatus("המערכת מוכנה (Ready)");
-  });
-
-  function debugAndSend() {
-    logStatus("ניסיון שליחה...");
-    
-    if (!window.$chatwoot) {
-        alert("שגיאה: אובייקט Chatwoot לא קיים בדף!");
-        logStatus("שגיאה: window.$chatwoot לא נמצא");
-        return;
-    }
-
+  function sendTicket() {
     const name = document.getElementById('cust-name').value;
     const phone = document.getElementById('cust-phone').value;
-    
-    try {
-        logStatus("מנסה לבצע setUser...");
-        window.$chatwoot.setUser(phone, { name: name });
-        
-        logStatus("מנסה לשלוח הודעה...");
-        window.$chatwoot.sendMessage("בדיקת דיבאג: " + name + " - " + phone);
-        
-        alert("הפקודות נשלחו! בדוק אם הגיעה הודעה ב-Chatwoot");
-        logStatus("הפקודה נשלחה בהצלחה מהצד של הדפדפן");
-    } catch (err) {
-        alert("קרסה שגיאה: " + err.message);
-        logStatus("קריסה: " + err.message);
+    const branch = document.getElementById('branch-input').value;
+    const desc = document.getElementById('issue-desc').value;
+    const btn = document.getElementById('btn-submit');
+
+    if (!name || !phone) { alert("נא למלא שם וטלפון"); return; }
+    btn.innerText = "שולח..."; btn.disabled = true;
+
+    if (window.$chatwoot) {
+        // שימוש בזהות המשתמש כדי ליצור את הפנייה
+        window.$chatwoot.setUser(phone, {
+            name: name,
+            phone_number: phone,
+            custom_attributes: { "סניף": branch, "פנייה": desc }
+        });
+
+        // פתיחה וסגירה מהירה של הווידג'ט ברקע כדי "להכריח" שליחה
+        window.$chatwoot.toggle("open");
+        setTimeout(() => {
+            window.$chatwoot.toggle("close");
+            document.getElementById('form-content').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        }, 500);
+    } else {
+        alert("המערכת בטעינה, נסה שוב בעוד רגע");
+        btn.disabled = false; btn.innerText = "שלח קריאה";
     }
   }
 </script>
-
 </body>
 </html>
