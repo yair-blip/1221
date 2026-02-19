@@ -13,10 +13,15 @@
         label { display: block; margin-bottom: 5px; font-weight: 700; }
         input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; font-size: 16px; }
         .submit-btn { background: #ff6600; color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 10px; }
-        .submit-btn:disabled { background: #ccc; }
         #success-message { display: none; color: green; font-weight: bold; padding: 20px; }
-        /* הסתרת הבועה של Chatwoot */
-        .woot-widget-bubble, .woot--bubble-holder, #chatwoot-widget-container { display: none !important; }
+        
+        /* הסתרה מוחלטת של רכיבי הצ'אט */
+        .woot-widget-bubble, .woot--bubble-holder, #chatwoot-widget-container, .woot-widget-holder { 
+            display: none !important; 
+            visibility: hidden !important; 
+            opacity: 0 !important; 
+            pointer-events: none !important;
+        }
     </style>
 </head>
 <body>
@@ -53,7 +58,13 @@
 </div>
 
 <script>
-  // טעינת ה-SDK רק לצורך יצירת הסשן ברקע
+  window.chatwootSettings = { 
+    hideMessageBubble: true, 
+    position: 'left', 
+    locale: 'he',
+    type: 'standard'
+  };
+
   (function(d,t) {
     var BASE_URL="https://chat.bar-t.co.il";
     var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -79,29 +90,27 @@
     btn.innerText = "שולח...";
     btn.disabled = true;
 
-    // פקודה ישירה ל-SDK לפתוח שיחה ולשלוח הודעה
     if (window.$chatwoot) {
-        // מגדיר משתמש
-        window.$chatwoot.setUser(phone, { name: name });
-        
-        // נסיון שליחה עם דיליי קטן לוודא שהיוזר נוצר
+        // מגדיר משתמש בצורה שקטה
+        window.$chatwoot.setUser(phone, {
+            name: name,
+            identifier: phone
+        });
+
+        // שליחה שקטה
         setTimeout(() => {
-            try {
-                window.$chatwoot.setCustomAttributes({ "סניף": branch });
-                window.$chatwoot.sendMessage(`קריאה חדשה:\nשם: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
-                
-                // אם הגענו לכאן זה כנראה נשלח
-                document.getElementById('form-content').style.display = 'none';
-                document.getElementById('success-message').style.display = 'block';
-            } catch (err) {
-                // אם נכשל, ננסה "בכוח" לפתוח את הצ'אט
-                window.$chatwoot.toggle("open");
-                btn.disabled = false;
-                btn.innerText = "שלח קריאה";
-            }
-        }, 500);
+            window.$chatwoot.setCustomAttributes({ "סניף": branch });
+            window.$chatwoot.sendMessage(`קריאה חדשה מהאתר:\nשם: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
+            
+            // הצגת הצלחה וסגירה של כל חלון שאולי נפתח
+            document.getElementById('form-content').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+            
+            // פקודה כפולה לוודא שהצ'אט סגור
+            if(window.$chatwoot.toggle) window.$chatwoot.toggle("close");
+        }, 800);
     } else {
-        alert("המערכת בטעינה, המתן 2 שניות ונסה שוב");
+        alert("המערכת בטעינה, נסה שוב בעוד רגע");
         btn.disabled = false;
         btn.innerText = "שלח קריאה";
     }
