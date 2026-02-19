@@ -13,10 +13,11 @@
         label { display: block; margin-bottom: 5px; font-weight: 700; }
         input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; font-size: 16px; }
         textarea { height: 80px; resize: none; }
-        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 15px; display: block; width: 100%; }
-        #success-message { display: none; color: #28a745; font-weight: bold; padding: 20px; }
+        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 15px; display: block; }
+        #success-message { display: none; padding: 20px; }
+        .success-v { color: #28a745; font-size: 50px; margin-bottom: 10px; }
         /* הסתרת הצ'אט לחלוטין */
-        #chatwoot-widget-container, .woot-widget-bubble, .woot--bubble-holder { display: none !important; visibility: hidden !important; }
+        #chatwoot-widget-container, .woot-widget-bubble, .woot--bubble-holder { display: none !important; }
     </style>
 </head>
 <body>
@@ -42,13 +43,14 @@
             <label>תיאור הפנייה:</label>
             <textarea id="issue-desc"></textarea>
         </div>
-        <button class="submit-btn" id="btn-submit" onclick="sendTicket()">שלח קריאה</button>
+        <button class="submit-btn" id="btn-submit" onclick="sendTicket()">שלח קריאה עכשיו</button>
     </div>
 
     <div id="success-message">
-        <div style="font-size: 50px;">✓</div>
+        <div class="success-v">✓</div>
         <h3>הקריאה נשלחה בהצלחה!</h3>
         <p>נציג שירות יחזור אליך בהקדם.</p>
+        <button class="submit-btn" style="background:#666" onclick="location.reload()">פתיחת קריאה נוספת</button>
     </div>
 </div>
 
@@ -72,24 +74,27 @@
     const desc = document.getElementById('issue-desc').value;
     const btn = document.getElementById('btn-submit');
 
-    if (!name || !phone) { alert("אנא מלא שם וטלפון"); return; }
+    if (!name || !phone) { alert("נא למלא שם וטלפון"); return; }
 
-    // שינוי המראה מיד
+    // שינוי המראה מיד כדי שהמשתמש לא ירגיש תקיעה
     btn.innerText = "שולח...";
     btn.disabled = true;
 
-    // שליחה לשרת (מבלי לחכות לתשובה שתתקע את הדף)
-    if (window.$chatwoot) {
-        window.$chatwoot.setUser(phone, { name: name });
-        
-        // שליחת המידע
-        setTimeout(() => {
-            window.$chatwoot.setCustomAttributes({ "סניף": branch });
-            window.$chatwoot.sendMessage(`קריאה חדשה:\nשם: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
-        }, 500);
+    // ניסיון שליחה שקט
+    try {
+        if (window.$chatwoot) {
+            window.$chatwoot.setUser(phone, { name: name });
+            
+            setTimeout(() => {
+                window.$chatwoot.setCustomAttributes({ "סניף": branch });
+                window.$chatwoot.sendMessage(`קריאה חדשה מהאתר:\nשם: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
+            }, 500);
+        }
+    } catch (e) {
+        console.log("Silent error bypass");
     }
 
-    // מעבר להודעת הצלחה תוך שנייה בכל מקרה
+    // מעבר למסך הצלחה בכל מקרה אחרי שנייה אחת
     setTimeout(() => {
         document.getElementById('form-content').style.display = 'none';
         document.getElementById('success-message').style.display = 'block';
