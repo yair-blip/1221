@@ -11,10 +11,10 @@
         .logo { max-width: 180px; margin-bottom: 20px; }
         .form-group { text-align: right; margin-bottom: 15px; }
         label { display: block; margin-bottom: 5px; font-weight: 700; }
-        input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; font-size: 16px; }
-        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 15px; width: 100%; }
-        .submit-btn:disabled { background: #ccc; cursor: not-allowed; }
+        input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; font-size: 16px; }
+        .submit-btn { background: #ff6600; color: white; border: none; padding: 16px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 15px; display: block; width: 100%; }
         #success-message { display: none; color: #28a745; font-weight: bold; padding: 20px; }
+        #chatwoot-widget-container, .woot-widget-bubble { display: none !important; }
     </style>
 </head>
 <body>
@@ -25,62 +25,57 @@
         <h2>פתיחת קריאת שירות</h2>
         <div class="form-group"><label>שם מלא:</label><input type="text" id="cust-name"></div>
         <div class="form-group"><label>טלפון:</label><input type="tel" id="cust-phone"></div>
-        <div class="form-group"><label>סניף:</label><input id="branch-input"></div>
-        <div class="form-group"><label>תיאור:</label><textarea id="issue-desc"></textarea></div>
+        <div class="form-group"><label>סניף:</label><input id="branch-input" placeholder="שם הסניף"></div>
+        <div class="form-group"><label>תיאור הפנייה:</label><textarea id="issue-desc"></textarea></div>
         <button class="submit-btn" id="btn-submit" onclick="sendTicket()">שלח קריאה</button>
     </div>
-    <div id="success-message"><h3>תודה! הקריאה התקבלה במערכת.</h3></div>
+    <div id="success-message">
+        <h3 style="color: #1a7f37;">תודה! הקריאה התקבלה</h3>
+        <p style="color: #1a7f37;">נציג יחזור אליך בהקדם.</p>
+    </div>
 </div>
 
 <script>
-  async function sendTicket() {
+  window.chatwootSettings = { hideMessageBubble: true, locale: 'he' };
+
+  (function(d,t) {
+    var BASE_URL="https://chat.bar-t.co.il";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js"; g.async=true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({ websiteToken: 'h9DWhNDA2QJUmnMgyCVnDtRZ', baseUrl: BASE_URL });
+    }
+  })(document,"script");
+
+  function sendTicket() {
     const name = document.getElementById('cust-name').value;
     const phone = document.getElementById('cust-phone').value;
     const branch = document.getElementById('branch-input').value;
     const desc = document.getElementById('issue-desc').value;
     const btn = document.getElementById('btn-submit');
 
-    if (!name || !phone) { alert("מלא שם וטלפון"); return; }
+    if (!name || !phone) { alert("נא למלא שם וטלפון"); return; }
     btn.innerText = "שולח..."; btn.disabled = true;
 
-    // הגדרות API מבוססות על הנתונים שלך
-    const ACCOUNT_ID = "2"; 
-    const INBOX_ID = "10"; 
-    const ACCESS_TOKEN = "כאן_להדביק_את_הטוקן_מהפרופיל"; // <--- שים לב להחליף את זה!
-    const BASE_URL = `https://chat.bar-t.co.il/api/v1/accounts/${ACCOUNT_ID}`;
+    if (window.$chatwoot && typeof window.$chatwoot.setUser === 'function') {
+        // 1. קביעת המשתמש
+        window.$chatwoot.setUser(phone, { name: name, phone_number: phone });
+        
+        // 2. עדכון תכונות (זה יופיע לך ב-Chatwoot)
+        window.$chatwoot.setCustomAttributes({ "סניף": branch, "פנייה_מהאתר": desc });
 
-    try {
-        // 1. יצירת איש קשר
-        const contactRes = await fetch(`${BASE_URL}/contacts`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'api_access_token': ACCESS_TOKEN },
-            body: JSON.stringify({ name: name, phone_number: phone, custom_attributes: { branch: branch } })
-        });
-        const contactData = await contactRes.json();
-        const contactId = contactData.payload.contact.id;
+        // 3. תיקון השגיאה: שליחת אירוע בפורמט JSON תקין
+        window.postMessage(JSON.stringify({ event: 'chatwoot-widget:set-user' }), '*');
 
-        // 2. יצירת שיחה
-        const convRes = await fetch(`${BASE_URL}/conversations`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'api_access_token': ACCESS_TOKEN },
-            body: JSON.stringify({ source_id: contactId, inbox_id: INBOX_ID, contact_id: contactId })
-        });
-        const convData = await convRes.json();
-        const convId = convData.id;
-
-        // 3. שליחת ההודעה
-        await fetch(`${BASE_URL}/conversations/${convId}/messages`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'api_access_token': ACCESS_TOKEN },
-            body: JSON.stringify({ content: `פנייה חדשה:\nשם: ${name}\nטלפון: ${phone}\nסניף: ${branch}\nתיאור: ${desc}`, message_type: "incoming" })
-        });
-
-        document.getElementById('form-content').style.display = 'none';
-        document.getElementById('success-message').style.display = 'block';
-    } catch (e) {
-        console.error(e);
-        alert("חלה שגיאה בשליחה. וודא שהטוקן תקין.");
-        btn.disabled = false; btn.innerText = "שלח קריאה";
+        // 4. הצגת הצלחה
+        setTimeout(() => {
+            document.getElementById('form-content').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        }, 1000);
+    } else {
+        // גיבוי אם ה-SDK לא נטען בזמן
+        setTimeout(sendTicket, 500);
     }
   }
 </script>
