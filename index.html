@@ -9,15 +9,13 @@
         body { font-family: 'Assistant', sans-serif; background: #f0f2f5; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
         .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 90%; max-width: 400px; text-align: center; border-top: 6px solid #ff6600; }
         .logo { max-width: 180px; margin-bottom: 20px; }
-        h2 { margin-bottom: 20px; }
         .form-group { text-align: right; margin-bottom: 15px; }
         label { display: block; margin-bottom: 5px; font-weight: 700; }
-        input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; }
+        input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; font-size: 16px; }
         .submit-btn { background: #ff6600; color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 10px; }
-        .submit-btn:disabled { background: #ccc; cursor: not-allowed; }
         #success-message { display: none; color: green; font-weight: bold; padding: 20px; }
-        /* הסתרת הבועה של צ'אטוואט */
-        .woot-widget-bubble, .woot--bubble-holder, #chatwoot-widget-container { display: none !important; visibility: hidden !important; }
+        /* מחביא את הבועה רק אם הצ'אט לא פתוח */
+        .woot-widget-bubble, .woot--bubble-holder { display: none !important; }
     </style>
 </head>
 <body>
@@ -37,13 +35,74 @@
         </div>
         <div class="form-group">
             <label>סניף:</label>
-            <input list="branches" id="branch-input" placeholder="חפש סניף...">
-            <datalist id="branches">
-                <option value="באר שבע"> <option value="תל אביב"> <option value="חיפה"> <option value="ירושלים">
-            </datalist>
+            <input id="branch-input" placeholder="הקלד שם סניף...">
         </div>
         <div class="form-group">
             <label>תיאור הפנייה:</label>
             <textarea id="issue-desc"></textarea>
         </div>
-        <button class="submit-btn" id="btn-submit" onclick="sendTicket()">שלח
+        <button class="submit-btn" id="btn-submit" onclick="sendTicket()">שלח קריאה</button>
+    </div>
+
+    <div id="success-message">
+        <h3>הקריאה נשלחה בהצלחה!</h3>
+        <p>נציג יחזור אליך בהקדם.</p>
+    </div>
+</div>
+
+<script>
+  window.chatwootSettings = { hideMessageBubble: true, locale: 'he' };
+
+  (function(d,t) {
+    var BASE_URL="https://chat.bar-t.co.il";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js"; g.async=true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'h9DWhNDA2QJUmnMgyCVnDtRZ',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+
+  function sendTicket() {
+    const name = document.getElementById('cust-name').value;
+    const phone = document.getElementById('cust-phone').value;
+    const branch = document.getElementById('branch-input').value;
+    const desc = document.getElementById('issue-desc').value;
+    const btn = document.getElementById('btn-submit');
+
+    if (!name || !phone) { alert("אנא מלא שם וטלפון"); return; }
+
+    btn.innerText = "מעבד...";
+    btn.disabled = true;
+
+    if (window.$chatwoot) {
+        try {
+            // זיהוי משתמש
+            window.$chatwoot.setUser(phone, { name: name, phone_number: phone });
+            
+            // שליחת הודעה
+            window.$chatwoot.sendMessage(`פנייה מהאתר: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
+
+            // הצלחה
+            document.getElementById('form-content').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+        } catch (e) {
+            console.error(e);
+            // אם השליחה השקטה נכשלה - פשוט נפתח את הצ'אט שהמשתמש יכתוב ידנית
+            window.$chatwoot.toggle("open");
+            btn.innerText = "שלח קריאה";
+            btn.disabled = false;
+        }
+    } else {
+        alert("המערכת עדיין בטעינה, נסה שוב בעוד 2 שניות");
+        btn.innerText = "שלח קריאה";
+        btn.disabled = false;
+    }
+  }
+</script>
+
+</body>
+</html>
