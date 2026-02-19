@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>איחוד הצלה - פתיחת קריאה</title>
+    <title>איחוד הצלה - פתיחת קריאה (Debug Mode)</title>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Assistant', sans-serif; background: #f0f2f5; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        body { font-family: 'Assistant', sans-serif; background: #f0f2f5; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; flex-direction: column; }
         .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 90%; max-width: 400px; text-align: center; border-top: 6px solid #ff6600; }
         .logo { max-width: 180px; margin-bottom: 20px; }
         .form-group { text-align: right; margin-bottom: 15px; }
         label { display: block; margin-bottom: 5px; font-weight: 700; }
         input, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-family: inherit; box-sizing: border-box; font-size: 16px; }
         .submit-btn { background: #ff6600; color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; margin-top: 10px; }
-        #success-message { display: none; color: green; font-weight: bold; padding: 20px; }
-        /* החבאה מוחלטת */
-        #chatwoot-widget-container, .woot-widget-bubble, .woot--bubble-holder { display: none !important; visibility: hidden !important; }
+        #debug-log { width: 90%; max-width: 400px; background: #333; color: #0f0; padding: 10px; border-radius: 8px; margin-top: 20px; font-family: monospace; font-size: 12px; height: 100px; overflow-y: auto; text-align: left; direction: ltr; }
+        #success-message { display: none; color: #28a745; font-weight: bold; padding: 20px; }
+        .woot-widget-bubble, .woot--bubble-holder { display: none !important; }
     </style>
 </head>
 <body>
@@ -26,59 +26,71 @@
         <h2>פתיחת קריאת שירות</h2>
         <div class="form-group"><label>שם מלא:</label><input type="text" id="cust-name"></div>
         <div class="form-group"><label>טלפון:</label><input type="tel" id="cust-phone"></div>
-        <div class="form-group"><label>סניף:</label><input id="branch-input" placeholder="שם הסניף"></div>
-        <div class="form-group"><label>תיאור הפנייה:</label><textarea id="issue-desc"></textarea></div>
+        <div class="form-group"><label>סניף:</label><input id="branch-input"></div>
+        <div class="form-group"><label>תיאור:</label><textarea id="issue-desc"></textarea></div>
         <button class="submit-btn" id="btn-submit" onclick="sendTicket()">שלח קריאה</button>
     </div>
-    <div id="success-message"><h3>תודה! הקריאה התקבלה</h3><p>נציג יחזור אליך בהקדם.</p></div>
+    <div id="success-message"><h3>נשלח בהצלחה!</h3></div>
 </div>
 
+<div id="debug-log">Debug Log Initialized...<br></div>
+
 <script>
+  function logDebug(msg) {
+    const log = document.getElementById('debug-log');
+    log.innerHTML += `> ${msg}<br>`;
+    log.scrollTop = log.scrollHeight;
+    console.log(`[DEBUG]: ${msg}`);
+  }
+
   window.chatwootSettings = { hideMessageBubble: true, locale: 'he' };
-  
+
   (function(d,t) {
     var BASE_URL="https://chat.bar-t.co.il";
     var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=BASE_URL+"/packs/js/sdk.js"; g.async=true;
     s.parentNode.insertBefore(g,s);
     g.onload=function(){
-      window.chatwootSDK.run({ websiteToken: 'h9DWhNDA2QJUmnMgyCVnDtRZ', baseUrl: BASE_URL })
+      logDebug("SDK Script Loaded");
+      window.chatwootSDK.run({
+        websiteToken: 'h9DWhNDA2QJUmnMgyCVnDtRZ',
+        baseUrl: BASE_URL
+      });
     }
   })(document,"script");
 
-  function sendTicket() {
+  window.addEventListener('onChatwootReady', () => {
+    logDebug("Chatwoot is READY");
+  });
+
+  async function sendTicket() {
     const name = document.getElementById('cust-name').value;
     const phone = document.getElementById('cust-phone').value;
-    const branch = document.getElementById('branch-input').value;
-    const desc = document.getElementById('issue-desc').value;
     const btn = document.getElementById('btn-submit');
 
-    if (!name || !phone) { alert("מלא שם וטלפון"); return; }
-    btn.innerText = "מעבד..."; btn.disabled = true;
+    logDebug(`Attempting send for: ${name}`);
+    btn.disabled = true;
+    btn.innerText = "שולח...";
 
     if (window.$chatwoot) {
-        // שלב 1: זיהוי
-        window.$chatwoot.setUser(phone, { name: name, phone_number: phone });
-        
-        // שלב 2: שליחה דרך אירוע פנימי של ה-SDK
+        logDebug("Executing setUser...");
+        window.$chatwoot.setUser(phone, { name: name });
+
         setTimeout(() => {
-            window.$chatwoot.setCustomAttributes({ "סניף": branch });
-            
-            // פקודת קסם: אנחנו שולחים את ההודעה ישירות לתוך ה-Iframe
-            window.postMessage(
-              JSON.stringify({
-                event: 'setLabel',
-                labels: ['קריאה_מהאתר']
-              }),
-              '*'
-            );
-
-            window.$chatwoot.sendMessage(`--- קריאה חדשה ---\nשם: ${name}\nסניף: ${branch}\nתיאור: ${desc}`);
-
-            // מציגים הצלחה
-            document.getElementById('form-content').style.display = 'none';
-            document.getElementById('success-message').style.display = 'block';
+            try {
+                logDebug("Sending Message...");
+                window.$chatwoot.sendMessage(`קריאה חדשה: ${name}, טלפון: ${phone}`);
+                logDebug("Message command sent!");
+                
+                document.getElementById('form-content').style.display = 'none';
+                document.getElementById('success-message').style.display = 'block';
+            } catch (e) {
+                logDebug(`ERROR: ${e.message}`);
+                btn.disabled = false;
+            }
         }, 1500);
+    } else {
+        logDebug("Chatwoot SDK not found in window!");
     }
   }
 </script>
