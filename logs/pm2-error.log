@@ -1,0 +1,36 @@
+2026-03-02 17:20:49: Error: listen EADDRINUSE: address already in use :::3000
+2026-03-02 17:20:49:     at Server.setupListenHandle [as _listen2] (node:net:1463:16)
+2026-03-02 17:20:49:     at listenInCluster (node:net:1511:12)
+2026-03-02 17:20:49:     at Server.listen (node:net:1599:7)
+2026-03-02 17:20:49:     at Function.listen (/opt/bartech-ai-mvp/node_modules/express/lib/application.js:635:24)
+2026-03-02 17:20:49:     at Object.<anonymous> (/opt/bartech-ai-mvp/index.js:142:20)
+2026-03-02 17:20:49:     at Module._compile (node:internal/modules/cjs/loader:1198:14)
+2026-03-02 17:20:49:     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+2026-03-02 17:20:49:     at Module.load (node:internal/modules/cjs/loader:1076:32)
+2026-03-02 17:20:49:     at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+2026-03-02 17:20:49:     at Object.<anonymous> (/root/.nvm/versions/node/v16.20.2/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+2026-03-02 17:20:49:   code: 'EADDRINUSE',
+2026-03-02 17:20:49:   errno: -98,
+2026-03-02 17:20:49:   syscall: 'listen',
+2026-03-02 17:20:49:   address: '::',
+2026-03-02 17:20:49:   port: 3000
+2026-03-02 17:20:49: }
+2026-03-02 17:20:50: [logger] ⚠️  No alert channel configured. Set ALERT_TELEGRAM_BOT_TOKEN + ALERT_TELEGRAM_CHAT_ID (or ALERT_EMAIL_TO) in .env to receive error alerts.
+2026-03-02 17:31:11: Error: listen EADDRINUSE: address already in use :::3000
+2026-03-02 17:31:11:     at Server.setupListenHandle [as _listen2] (node:net:1463:16)
+2026-03-02 17:31:11:     at listenInCluster (node:net:1511:12)
+2026-03-02 17:31:11:     at Server.listen (node:net:1599:7)
+2026-03-02 17:31:11:     at Function.listen (/opt/bartech-ai-mvp/node_modules/express/lib/application.js:635:24)
+2026-03-02 17:31:11:     at Object.<anonymous> (/opt/bartech-ai-mvp/index.js:142:20)
+2026-03-02 17:31:11:     at Module._compile (node:internal/modules/cjs/loader:1198:14)
+2026-03-02 17:31:11:     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+2026-03-02 17:31:11:     at Module.load (node:internal/modules/cjs/loader:1076:32)
+2026-03-02 17:31:11:     at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+2026-03-02 17:31:11:     at Object.<anonymous> (/root/.nvm/versions/node/v16.20.2/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+2026-03-02 17:31:11:   code: 'EADDRINUSE',
+2026-03-02 17:31:11:   errno: -98,
+2026-03-02 17:31:11:   syscall: 'listen',
+2026-03-02 17:31:11:   address: '::',
+2026-03-02 17:31:11:   port: 3000
+2026-03-02 17:31:11: }
+2026-03-02 17:31:13: [logger] ⚠️  No alert channel configured. Set ALERT_TELEGRAM_BOT_TOKEN + ALERT_TELEGRAM_CHAT_ID (or ALERT_EMAIL_TO) in .env to receive error alerts.

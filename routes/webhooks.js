@@ -1,89 +1,65 @@
 const express = require('express');
 const router = express.Router();
-const aiService = require('../services/aiService');
-const chatwootService = require('../services/chatwootService');
-const dbService = require('../services/dbService');
-const businessHoursService = require('../services/businessHoursService');
-const configService = require('../services/configService');
-const logger = require('../services/logger');
+const axios = require('axios');
+const postmark = require("postmark");
+// ייבוא השירות שמנהל את התור
+const { addJob } = require('../services/queueService');
 
-const recentlySent = new Set();
-function markBotSent(convId) {
-    recentlySent.add(String(convId));
-    setTimeout(() => recentlySent.delete(String(convId)), 10000);
-}
-function botJustSent(convId) {
-    return recentlySent.has(String(convId));
-}
+const client = new postmark.ServerClient("F6579ead-f8ab-446e-bf62-f6156be5db87");
 
-function detectLanguage(text) {
-    const t = text || '';
-    const he = (t.match(/[\u05D0-\u05EA]/g) || []).length;
-    return he > 0 ? 'he' : 'en';
-}
-
+// 1. הבוט של הוואטסאפ (תיבות 5, 7, 9)
 router.post('/chatwoot', async (req, res) => {
-    res.status(200).send('OK');
-    const event = req.body;
-    if (!event || event.event !== 'message_created') return;
-
-    const conversationId = event.conversation?.id || event.conversation_id;
-    const accountId = event.account?.id || event.account_id;
-    const content = (event.content || '').trim();
-    const isIncoming = event.message_type === 0 || event.message_type === 'incoming';
-
-    if (!isIncoming || !content || botJustSent(conversationId)) return;
-
     try {
-        const lang = detectLanguage(content);
-        const history = await chatwootService.getConversationMessages(accountId, conversationId);
-        
-        // סינון הודעות פרטיות ופעילויות
-        const messages = history.filter(m => m.content && m.private !== true).map(m => ({
-            role: (m.message_type === 0 || m.message_type === 'incoming') ? 'user' : 'assistant',
-            content: m.content.trim(),
-        }));
+        // אנחנו שולחים את ההודעה לתור. ה-Worker כבר ייקח אותה משם ויענה.
+        if (addJob) {
+            await addJob(req.body);
+            console.log('✅ Message queued successfully');
+        } else {
+            console.error('❌ addJob not found in queueService');
+        }
+        res.status(200).send('ok');
+    } catch (error) {
+        console.error('Webhook Error:', error.message);
+        res.status(200).send('ok'); 
+    }
+});
 
-        if (messages.length === 0) messages.push({ role: 'user', content });
-
-        // זיהוי אם הלקוח ביקש נציג או שה-AI חושב שצריך נציג
-        const HANDOFF_RE = /נציג|אנוש|סוכן|אדם|תעביר|agent|human/i;
-        const manualHandoff = HANDOFF_RE.test(content);
-        
-        let analysis = { shouldHandoff: false };
-        try { analysis = await aiService.analyzeSentimentAndUrgency(messages); } catch (_) {}
-
-        if (manualHandoff || analysis.shouldHandoff) {
-            markBotSent(conversationId);
-            
-            // בדיקה: האם המשרד סגור עכשיו?
-            if (!businessHoursService.isBusinessHours()) {
-                const closingMsg = businessHoursService.getOutOfHoursMessage(lang);
-                await chatwootService.sendMessage(accountId, conversationId, closingMsg, 'outgoing');
-            } else {
-                await chatwootService.sendMessage(accountId, conversationId, "מעביר אותך לנציג אנושי ברגע זה...", 'outgoing');
-            }
-
-            // העברת השיחה לנציג (סטטוס פתוח) בכל מקרה
-            await chatwootService.updateConversation(accountId, conversationId, { status: 'open' });
-            
-            // יצירת סיכום AI עבור הנציג שיראה בבוקר
-            let summary = 'Review history.';
-            try { summary = await aiService.generateHandoffSummary(messages); } catch (_) {}
-            const note = `📋 סיכום AI\nשפה: ${lang}\nסיכום: ${summary}`;
-            await chatwootService.sendPrivateNote(accountId, conversationId, note);
-            return;
+// 2. הטופס מהאתר (תיבה 13)
+router.post('/form', async (req, res) => {
+    const { name, company, email, phone, subject } = req.body;
+    const baseURL = "https://chat.bar-t.co.il/api/v1/accounts/2";
+    const apiToken = "CuQaTss4JDPsmtqRjMXW7oeM";
+    
+    try {
+        const auth = { headers: { 'api_access_token': apiToken, 'Content-Type': 'application/json' } };
+        let contactId;
+        try {
+            const cRes = await axios.post(`${baseURL}/contacts`, { name, email, phone_number: phone, custom_attributes: { company } }, auth);
+            contactId = cRes.data.payload.contact.id;
+        } catch (e) {
+            const sRes = await axios.get(`${baseURL}/contacts/search?q=${email}`, auth);
+            contactId = sRes.data.payload[0].id;
         }
 
-        // אם המשרד סגור אבל עוד לא אספנו הכל - ה-AI ממשיך לדבר
-        const profile = configService.SERVICE_PROFILES['General Support'] || { requiredFields: [] };
-        const aiReply = await aiService.getAIResponse(messages, "General", null, {}, lang);
-        
-        markBotSent(conversationId);
-        await chatwootService.sendMessage(accountId, conversationId, aiReply, 'outgoing');
+        const convRes = await axios.post(`${baseURL}/conversations`, { inbox_id: 13, contact_id: contactId }, auth);
+        const conversationId = convRes.data.id;
 
-    } catch (err) {
-        logger.error('[Webhook Error]', { error: err.message });
+        await axios.post(`${baseURL}/conversations/${conversationId}/messages`, {
+            content: `📬 פנייה חדשה מהאתר:\nשם: ${name}\nחברה: ${company}\nטלפון: ${phone}\nנושא: ${subject}`,
+            message_type: "incoming"
+        }, auth);
+
+        await client.sendEmail({
+            "From": "Info BarTech <info@bar-t.co.il>",
+            "To": email,
+            "Subject": `פנייתך לבר-טק התקבלה (#${conversationId})`,
+            "HtmlBody": `<div dir="rtl"><h2>שלום ${name}, פנייתך #${conversationId} התקבלה בבר-טק.</h2></div>`,
+            "MessageStream": "outbound"
+        }).catch(() => {});
+
+        res.status(200).json({ success: true });
+    } catch (error) {
+        res.status(500).json({ error: 'Failed' });
     }
 });
 

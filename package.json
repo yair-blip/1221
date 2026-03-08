@@ -10,18 +10,21 @@
     "diagnose": "node diagnose.js"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "axios": "^1.6.8",
     "bullmq": "^5.8.1",
     "cors": "^2.8.6",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
     "express-rate-limit": "^7.2.0",
     "express-validator": "^7.0.1",
     "imap-simple": "^5.1.0",
     "ioredis": "^5.4.1",
     "mailparser": "^3.7.1",
+    "node-fetch": "^2.7.0",
     "nodemailer": "^6.9.14",
     "openai": "^4.52.0",
+    "postmark": "^4.0.7",
     "sqlite3": "^5.1.7",
     "winston": "^3.13.0"
   },

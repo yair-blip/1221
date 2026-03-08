@@ -1,0 +1,476 @@
+{"error":"listen EADDRINUSE: address already in use :::3000","level":"error","message":"Uncaught exception","timestamp":"2026-03-02 17:20:49"}
+{"level":"error","message":"[Chatwoot✗] undefined undefined | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:21:33"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:21:43"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:21:43"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:21:48"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:21:48"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:21:54"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:21:54"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:21:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:21:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:07"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:07"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:17"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:17"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:17"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:17"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:17"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:17"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:17"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:17"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:17"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:17"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:18"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:18"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:18"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:18"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:18"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:18"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:18"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:18"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:18"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:18"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:18"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:18"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:18"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:18"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:18"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:18"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:18"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:18"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:18"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:18"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:28"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:28"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:39"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:39"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:39"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:39"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:39"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:39"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:49"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:49"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:49"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:49"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:49"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:49"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:49"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:49"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:50"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:50"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:50"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:50"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:50"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:50"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:50"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:50"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:50"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:50"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:50"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:50"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:50"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:50"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:50"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:50"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:50"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:50"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:51"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:51"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:51"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:51"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:51"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:51"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:51"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:51"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:51"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:51"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:51"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:51"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:51"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:51"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:51"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:51"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:51"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:51"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:52"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:52"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:52"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:52"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:52"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:52"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:52"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:52"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:52"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:52"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:52"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:52"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:52"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:52"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:52"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:52"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:52"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:52"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:52"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:52"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:52"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:52"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:53"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:53"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:53"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:53"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:53"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:53"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:53"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:53"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:53"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:53"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:53"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:53"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:53"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:53"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:53"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:53"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:53"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:53"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:53"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:53"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:53"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:53"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:54"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:54"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:54"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:54"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:54"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:54"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:54"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:54"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:54"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:54"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:54"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:54"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:54"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:54"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:54"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:54"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:54"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:54"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:54"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:54"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:54"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:54"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:55"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:55"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:55"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:55"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:55"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:55"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:55"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:55"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:55"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:55"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:55"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:55"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:55"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:55"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:55"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:55"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:55"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:55"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:55"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:55"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:55"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:55"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:56"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:56"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:56"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:56"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:56"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:56"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:56"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:56"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:56"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:56"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:56"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:56"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:56"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:56"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:56"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:56"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:56"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:56"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:56"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:56"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:56"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:56"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:57"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:57"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:58"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:58"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:22:59"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 429 \"Retry later\\n\" | /api/v1/accounts/2/contacts/search","timestamp":"2026-03-02 17:22:59"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"message\":\"Email has already been taken\",\"attributes\":[\"email\"]} | /api/v1/accounts/2/contacts","timestamp":"2026-03-02 17:23:00"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:00"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:00"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:00"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:00"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:00"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:00"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:00"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:00"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:00"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:00"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:00"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:00"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:00"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:00"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:00"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:00"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:00"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:00"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:00"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:00"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:00"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:01"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:01"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:01"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:01"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:01"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:01"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:01"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:01"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:01"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:01"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:01"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:01"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:01"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:01"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:01"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:01"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:02"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:02"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:02"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:02"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:02"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:02"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:02"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:02"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:02"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:02"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:02"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:02"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:02"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:02"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:02"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:02"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:02"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:02"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:02"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:02"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:03"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:03"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:03"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:03"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:03"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:03"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:03"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:03"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:03"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:03"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:03"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:03"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:03"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:03"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:03"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:03"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:04"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:04"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:04"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:04"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:04"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:04"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:04"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:04"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:04"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:04"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:04"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:04"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:04"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:04"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:04"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:04"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:05"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:05"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:05"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:05"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:05"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:05"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:05"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:05"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:05"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:05"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:05"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:05"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:05"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:05"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:05"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:05"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:05"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:05"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:05"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:05"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:05"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:05"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:05"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:05"}
+{"level":"error","message":"[Chatwoot✗] 422 {\"error\":\"param is missing or the value is empty: contact phone number\"} | /api/v1/accounts/2/conversations","timestamp":"2026-03-02 17:23:06"}
+{"error":"Request failed with status code 422","level":"error","message":"Error processing email","timestamp":"2026-03-02 17:23:06"}
+{"error":"listen EADDRINUSE: address already in use :::3000","level":"error","message":"Uncaught exception","timestamp":"2026-03-02 17:31:11"}
+{"error":"400 Timeout while downloading https://chat.bar-t.co.il/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBWVk9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0c5135cafa47ef59fefd76af3172345c7f6c4395/File.jpg.","level":"error","message":"[Webhook] Failed","timestamp":"2026-03-02 19:05:19"}
+{"error":"400 Timeout while downloading https://chat.bar-t.co.il/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBWWM9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dc09a021ed0583004d5c3306f53c56d6b765e5f6/File.jpg.","level":"error","message":"[Webhook] Failed","timestamp":"2026-03-02 19:07:31"}
+{"level":"error","message":"[Chatwoot✗] undefined undefined | /api/v1/accounts/2/conversations/292/messages","timestamp":"2026-03-02 20:23:44"}
+{"conversationId":292,"error":"timeout of 15000ms exceeded","level":"error","message":"[AI] Pipeline failed","timestamp":"2026-03-02 20:23:44"}
+{"level":"error","message":"[Chatwoot✗] undefined undefined | /api/v1/accounts/2/conversations/291/messages","timestamp":"2026-03-02 20:24:48"}
+{"conversationId":291,"error":"timeout of 15000ms exceeded","level":"error","message":"[AI] Pipeline failed","timestamp":"2026-03-02 20:24:48"}
+{"level":"error","message":"[Chatwoot✗] undefined undefined | /api/v1/accounts/2/conversations/300/messages","timestamp":"2026-03-02 23:37:53"}
+{"level":"error","message":"[Chatwoot✗] undefined undefined | /api/v1/accounts/2/conversations/300/messages","timestamp":"2026-03-02 23:38:14"}
+{"conversationId":300,"error":"timeout of 15000ms exceeded","level":"error","message":"[AI] Pipeline failed","timestamp":"2026-03-02 23:38:14"}
+{"level":"error","message":"[Chatwoot✗] undefined undefined | /api/v1/accounts/2/conversations/300/messages","timestamp":"2026-03-02 23:38:29"}
+{"conversationId":300,"error":"timeout of 15000ms exceeded","level":"error","message":"[Webhook] Outer failed","timestamp":"2026-03-02 23:38:29"}
+{"level":"error","message":"[Chatwoot✗] undefined undefined | /api/v1/accounts/2/conversations/300/messages","timestamp":"2026-03-02 23:38:44"}
+{"level":"error","message":"[Email] sendEmail FAILED to ellash@holon.muni.il: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2026-03-05 15:18:26"}
+{"level":"error","message":"[Lifecycle] Email OPENED failed: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2026-03-05 15:18:26"}
+{"level":"error","message":"[Email] sendEmail FAILED to no-reply@riscogroup.com: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2026-03-05 15:18:32"}
+{"level":"error","message":"[Lifecycle] Email OPENED failed: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2026-03-05 15:18:32"}
+{"level":"error","message":"[Email] sendEmail FAILED to ellash@holon.muni.il: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2026-03-05 15:18:38"}
+{"level":"error","message":"[Lifecycle] Email OPENED failed: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2026-03-05 15:18:38"}
+{"level":"error","message":"[Email] sendEmail FAILED to no-reply@accounts.google.com: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2026-03-05 15:18:43"}
+{"level":"error","message":"[Lifecycle] Email OPENED failed: connect ECONNREFUSED 127.0.0.1:587","timestamp":"2026-03-05 15:18:43"}
+{"error":"processFn is not a function","level":"error","message":"[Queue] Job 443 failed","timestamp":"2026-03-08 16:16:22"}
+{"error":"processFn is not a function","level":"error","message":"[Queue] Job 444 failed","timestamp":"2026-03-08 16:16:22"}

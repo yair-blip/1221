@@ -1,0 +1,1206 @@
+2026-03-02 17:20:48: 2026-03-02 17:20:48 [[32minfo[39m] [AI] Provider: OpenAI | Model: gpt-4o
+2026-03-02 17:20:49: 2026-03-02 17:20:49 [[32minfo[39m] Email polling enabled — first poll in 15 seconds
+2026-03-02 17:20:49: 2026-03-02 17:20:49 [[31merror[39m] Uncaught exception {"error":"listen EADDRINUSE: address already in use :::3000"}
+2026-03-02 17:20:49: 2026-03-02 17:20:49 [[32minfo[39m] [DB] Connected: /opt/bartech-ai-mvp/data/mvp.db
+2026-03-02 17:20:49: 2026-03-02 17:20:49 [[32minfo[39m] [DB] Seeding demo data...
+2026-03-02 17:21:04: 2026-03-02 17:21:04 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:21:18: 2026-03-02 17:21:18 [[32minfo[39m] [Email] 204 new message(s) found
+2026-03-02 17:21:18: 2026-03-02 17:21:18 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:21:18: 2026-03-02 17:21:18 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:21:33: 2026-03-02 17:21:33 [[31merror[39m] [Chatwoot✗] undefined undefined | /api/v1/accounts/2/contacts/search
+2026-03-02 17:21:33: 2026-03-02 17:21:33 [[33mwarn[39m] [Chatwoot] findContact failed for "team@learn.mail.monday.com": timeout of 15000ms exceeded
+2026-03-02 17:21:33: 2026-03-02 17:21:33 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:21:40: 2026-03-02 17:21:40 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:21:43: 2026-03-02 17:21:43 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:21:43: 2026-03-02 17:21:43 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:21:43: 2026-03-02 17:21:43 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:21:43: 2026-03-02 17:21:43 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:21:43: 2026-03-02 17:21:43 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:21:48: 2026-03-02 17:21:48 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:21:48: 2026-03-02 17:21:48 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:21:48: 2026-03-02 17:21:48 [[32minfo[39m] New email from no-reply@riscogroup.com
+2026-03-02 17:21:48: 2026-03-02 17:21:48 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:21:48: 2026-03-02 17:21:48 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:21:54: 2026-03-02 17:21:54 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:21:54: 2026-03-02 17:21:54 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:21:54: 2026-03-02 17:21:54 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:21:54: 2026-03-02 17:21:54 [[32minfo[39m] New email from webinars@e.zoom.us
+2026-03-02 17:21:54: 2026-03-02 17:21:54 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:21:59: 2026-03-02 17:21:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:21:59: 2026-03-02 17:21:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:21:59: 2026-03-02 17:21:59 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:21:59: 2026-03-02 17:21:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:21:59: 2026-03-02 17:21:59 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:21:59: 2026-03-02 17:21:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:04: 2026-03-02 17:22:04 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:22:04: 2026-03-02 17:22:04 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:05: 2026-03-02 17:22:05 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:22:07: 2026-03-02 17:22:07 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:07: 2026-03-02 17:22:07 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:07: 2026-03-02 17:22:07 [[32minfo[39m] New email from marketing@landbot.io
+2026-03-02 17:22:07: 2026-03-02 17:22:07 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:07: 2026-03-02 17:22:07 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:17: 2026-03-02 17:22:17 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] New email from no-reply@riscogroup.com
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:18: 2026-03-02 17:22:18 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:28: 2026-03-02 17:22:28 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:28: 2026-03-02 17:22:28 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:28: 2026-03-02 17:22:28 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:28: 2026-03-02 17:22:28 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:34: 2026-03-02 17:22:34 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[32minfo[39m] New email from google-maps-platform-noreply@google.com
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:39: 2026-03-02 17:22:39 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[32minfo[39m] New email from no-reply@riscogroup.com
+2026-03-02 17:22:49: 2026-03-02 17:22:49 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] New email from no-reply@riscogroup.com
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] New email from jiaqi@landbot.io
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] New email from no_reply@gdms.cloud
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:50: 2026-03-02 17:22:50 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:51: 2026-03-02 17:22:51 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] New email from no-reply@riscogroup.com
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:52: 2026-03-02 17:22:52 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:53: 2026-03-02 17:22:53 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] New email from service@mail.hik-partner.com
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] New email from no-reply@riscogroup.com
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:54: 2026-03-02 17:22:54 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] New email from service@mail.hik-partner.com
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:55: 2026-03-02 17:22:55 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] New email from service@mail.hik-partner.com
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] New email from service@mail.hik-partner.com
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:56: 2026-03-02 17:22:56 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from no-reply@accounts.google.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[33mwarn[39m] [Chatwoot] findContact failed for "email@safe.eset.com": Request failed with status code 429
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:57: 2026-03-02 17:22:57 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "email@safe.eset.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "email@safe.eset.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:58: 2026-03-02 17:22:58 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "email@safe.eset.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "email@safe.eset.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "team@learn.mail.monday.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "email@safe.eset.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[31merror[39m] [Chatwoot✗] 429 "Retry later\n" | /api/v1/accounts/2/contacts/search
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[33mwarn[39m] [Chatwoot] findContact failed for "mailer-daemon@googlemail.com": Request failed with status code 429
+2026-03-02 17:22:59: 2026-03-02 17:22:59 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] [Chatwoot✗] 422 {"message":"Email has already been taken","attributes":["email"]} | /api/v1/accounts/2/contacts
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] New email from no_reply@euc1.monday.com
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:23:00: 2026-03-02 17:23:00 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] New email from CloudPlatform-noreply@google.com
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/contacts
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] New email from CloudPlatform-noreply@google.com
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] New email from payments-noreply@google.com
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] New email from payments-noreply@google.com
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:01: 2026-03-02 17:23:01 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] New email from payments-noreply@google.com
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] New email from payments-noreply@google.com
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] New email from no-reply@riscogroup.com
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] New email from marketing@landbot.io
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:02: 2026-03-02 17:23:02 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] New email from CloudPlatform-noreply@google.com
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:23:03: 2026-03-02 17:23:03 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:04: 2026-03-02 17:23:04 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] New email from no-reply@accounts.google.com
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] New email from email@safe.eset.com
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] New email from team@learn.mail.monday.com
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] New email from mailer-daemon@googlemail.com
+2026-03-02 17:23:05: 2026-03-02 17:23:05 [[32minfo[39m] [Chatwoot→] GET /api/v1/accounts/2/contacts/search
+2026-03-02 17:23:06: 2026-03-02 17:23:06 [[32minfo[39m] [Chatwoot→] POST /api/v1/accounts/2/conversations
+2026-03-02 17:23:06: 2026-03-02 17:23:06 [[31merror[39m] [Chatwoot✗] 422 {"error":"param is missing or the value is empty: contact phone number"} | /api/v1/accounts/2/conversations
+2026-03-02 17:23:06: 2026-03-02 17:23:06 [[31merror[39m] Error processing email {"error":"Request failed with status code 422"}
+2026-03-02 17:24:04: 2026-03-02 17:24:04 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:24:05: 2026-03-02 17:24:05 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:25:04: 2026-03-02 17:25:04 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:25:05: 2026-03-02 17:25:05 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:26:04: 2026-03-02 17:26:04 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:26:05: 2026-03-02 17:26:05 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:27:04: 2026-03-02 17:27:04 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:27:05: 2026-03-02 17:27:05 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:28:04: 2026-03-02 17:28:04 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:28:05: 2026-03-02 17:28:05 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:29:04: 2026-03-02 17:29:04 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:29:05: 2026-03-02 17:29:05 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:30:04: 2026-03-02 17:30:04 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:30:05: 2026-03-02 17:30:05 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:31:04: 2026-03-02 17:31:04 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:31:05: 2026-03-02 17:31:05 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:31:10: 2026-03-02 17:31:10 [[32minfo[39m] SIGINT — shutting down
+2026-03-02 17:31:11: 2026-03-02 17:31:11 [[32minfo[39m] [AI] Provider: OpenAI | Model: gpt-4o
+2026-03-02 17:31:11: 2026-03-02 17:31:11 [[32minfo[39m] Email polling enabled — first poll in 15 seconds
+2026-03-02 17:31:11: 2026-03-02 17:31:11 [[31merror[39m] Uncaught exception {"error":"listen EADDRINUSE: address already in use :::3000"}
+2026-03-02 17:31:11: 2026-03-02 17:31:11 [[32minfo[39m] [DB] Connected: /opt/bartech-ai-mvp/data/mvp.db
+2026-03-02 17:31:26: 2026-03-02 17:31:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:31:27: 2026-03-02 17:31:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:32:26: 2026-03-02 17:32:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:32:27: 2026-03-02 17:32:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:33:26: 2026-03-02 17:33:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:33:27: 2026-03-02 17:33:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:34:26: 2026-03-02 17:34:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:34:27: 2026-03-02 17:34:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:35:26: 2026-03-02 17:35:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:35:28: 2026-03-02 17:35:28 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:36:26: 2026-03-02 17:36:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:36:27: 2026-03-02 17:36:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:37:26: 2026-03-02 17:37:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:37:27: 2026-03-02 17:37:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:38:26: 2026-03-02 17:38:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:38:27: 2026-03-02 17:38:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:39:26: 2026-03-02 17:39:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:39:27: 2026-03-02 17:39:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:40:26: 2026-03-02 17:40:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:40:27: 2026-03-02 17:40:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:41:26: 2026-03-02 17:41:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:41:28: 2026-03-02 17:41:28 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:42:26: 2026-03-02 17:42:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:42:27: 2026-03-02 17:42:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:43:26: 2026-03-02 17:43:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:43:27: 2026-03-02 17:43:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:44:26: 2026-03-02 17:44:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:44:27: 2026-03-02 17:44:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:45:26: 2026-03-02 17:45:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:45:28: 2026-03-02 17:45:28 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:46:26: 2026-03-02 17:46:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:46:28: 2026-03-02 17:46:28 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:47:26: 2026-03-02 17:47:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:47:27: 2026-03-02 17:47:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:48:26: 2026-03-02 17:48:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:48:27: 2026-03-02 17:48:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:49:26: 2026-03-02 17:49:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:49:27: 2026-03-02 17:49:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:50:26: 2026-03-02 17:50:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:50:27: 2026-03-02 17:50:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:51:26: 2026-03-02 17:51:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:51:27: 2026-03-02 17:51:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:52:26: 2026-03-02 17:52:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:52:27: 2026-03-02 17:52:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:53:26: 2026-03-02 17:53:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:53:27: 2026-03-02 17:53:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:54:26: 2026-03-02 17:54:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:54:27: 2026-03-02 17:54:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:55:26: 2026-03-02 17:55:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:55:27: 2026-03-02 17:55:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:56:26: 2026-03-02 17:56:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:56:27: 2026-03-02 17:56:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:57:26: 2026-03-02 17:57:26 [[32minfo[39m] [Email] Polling IMAP…
+2026-03-02 17:57:27: 2026-03-02 17:57:27 [[32minfo[39m] [Email] 0 new message(s) found
+2026-03-02 17:58:17: 2026-03-02 17:58:17 [[32minfo[39m] SIGINT — shutting down

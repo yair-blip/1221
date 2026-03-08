@@ -1,27 +1,2 @@
-# Environment — NEVER commit this
-.env
-
-# Dependencies
 node_modules/
-
-# Database (contains real customer data)
-data/*.db
-data/*.db-shm
-data/*.db-wal
-
-# Logs
-logs/*.log
-logs/*.gz
-
-# PM2
-.pm2/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Editor
-.vscode/
-.idea/
-*.swp
-*.swo
+.env
