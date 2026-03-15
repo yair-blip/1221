@@ -7515,3 +7515,23 @@
 {"level":"info","message":"[Chatwoot→] POST /api/v1/accounts/2/conversations/107/messages","timestamp":"2026-03-08 18:48:00"}
 {"level":"info","message":"[Chatwoot→] POST /api/v1/accounts/2/conversations/107/messages","timestamp":"2026-03-08 18:51:53"}
 {"level":"info","message":"[Chatwoot→] POST /api/v1/accounts/2/conversations/107/messages","timestamp":"2026-03-08 18:52:09"}
+{"level":"info","message":"[Email] Postmark client initialized","timestamp":"2026-03-12 08:55:18"}
+{"level":"info","message":"[Email] Sending via Postmark → info@bar-t.co.il | \"פנייה חדשה מהאתר: undefined\"","timestamp":"2026-03-12 09:00:43"}
+{"level":"info","message":"[Email] Sent successfully! ID: 9eda5684-4598-4b0e-91f5-afa977dcdeae","timestamp":"2026-03-12 09:00:43"}
+{"level":"info","message":"[Email] Postmark client initialized","timestamp":"2026-03-12 17:11:41"}
+{"level":"info","message":"[Email] Postmark client initialized","timestamp":"2026-03-12 17:14:17"}
+{"level":"info","message":"[Email] Postmark client initialized","timestamp":"2026-03-12 17:16:34"}
+{"level":"info","message":"[Email] Postmark client initialized","timestamp":"2026-03-12 17:23:56"}
+{"level":"info","message":"[Email] Postmark client initialized","timestamp":"2026-03-12 17:30:22"}
+{"level":"info","message":"[Email] Postmark client initialized","timestamp":"2026-03-12 17:32:36"}
+{"level":"info","message":"[Email] Postmark client initialized","timestamp":"2026-03-12 17:44:55"}
+{"level":"info","message":"[Email] Sending via Postmark → yair@bartec.co.il | \"⚠️ תקלה בבוט ה-AI של בר-טק\"","timestamp":"2026-03-12 17:45:30"}
+{"level":"info","message":"[Email] Sent successfully! ID: 682d8484-7214-48e0-ba38-d496df7cf6af","timestamp":"2026-03-12 17:45:30"}
+{"level":"info","message":"[Email] Sending via Postmark → yair@bartec.co.il | \"פנייה חדשה מהפורטל: undefined\"","timestamp":"2026-03-12 17:59:04"}
+{"level":"info","message":"[Email] Sent successfully! ID: dfe9db1c-b0ad-4e03-86d4-7420d416e291","timestamp":"2026-03-12 17:59:05"}
+{"level":"info","message":"[Email] Sending via Postmark → yair@bartec.co.il | \"⚠️ תקלה בבוט ה-AI של בר-טק\"","timestamp":"2026-03-12 18:03:15"}
+{"level":"info","message":"[Email] Sent successfully! ID: a05b5a48-c140-48f4-8a16-89024f1421cb","timestamp":"2026-03-12 18:03:16"}
+{"level":"info","message":"[Email] Sending via Postmark → yair@bartec.co.il | \"⚠️ תקלה בבוט ה-AI של בר-טק\"","timestamp":"2026-03-12 18:03:35"}
+{"level":"info","message":"[Email] Sent successfully! ID: 44a95577-9921-4aa8-a9cf-bb127fed53ba","timestamp":"2026-03-12 18:03:35"}
+{"level":"info","message":"[Email] Sending via Postmark → yair@bartec.co.il | \"⚠️ תקלה בבוט ה-AI של בר-טק\"","timestamp":"2026-03-12 18:04:47"}
+{"level":"info","message":"[Email] Sent successfully! ID: eb87b302-fd2c-4f34-8ed2-8d4b883a4f57","timestamp":"2026-03-12 18:04:47"}
